@@ -1,0 +1,16 @@
+{
+  "name": "rails-app-on-heroku-with-ci",
+  "scripts": {
+    "postdeploy": "rake db:migrate"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
