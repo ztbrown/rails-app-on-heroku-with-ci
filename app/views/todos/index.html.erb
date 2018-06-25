@@ -1,7 +1,7 @@
 <h1>Todos:</h1>
 <ul>
     <% @todos.each do |todo| %>
-        <li><%= todo.description %></li>
+        <li><%= link_to todo.description, todo_path(todo)  %></li>
     <% end %>
 </ul>
 <%= link_to "New Todo", new_todo_path, class: "nav-link"  %>
