@@ -1,0 +1,9 @@
+<%= form_for(@todo, url: todos_path(@todo)) do |f| %>
+    <div class="form-group">
+        <%= f.label "What needs to get done?" %><br />
+        <%= f.text_field :description, autofocus: false, autocomplete: "off", class: "form-control" %>
+    </div>
+
+    <%= f.submit "Create", class: "btn btn-primary"%>
+<% end %>
+
